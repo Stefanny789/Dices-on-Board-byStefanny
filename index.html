@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dice's On Board</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/Camada-2-100.png" alt="logo" class="logo"><a href="index.html"></a>
+        <img src="img/dice's on board 1.png" alt="nome-logo" class="nome-logo">
+        <nav>
+            <form class="search-bar">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit">
+                    <img src="img/lupa.png" alt="lupa" class="lupa">
+                </button>
+            </form>
+        </nav>
+    </header>
+
+    <div class="barra-header">
+        <nav>
+            <ul>
+                <li> <a href="pokemon.html">Pokemon</a></li>
+                <li><a href="yu-gi-oh.html"> Yu-Gi-Oh!</a></li>
+                <li><a href="magic.html">Magic</a></li>
+                <li><a href="rpg.html">RPG</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="slider">
+
+        <div class="slides">
+            <!-- Botões -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- Fim -->
+
+            <!-- Imagens do slide -->
+            <div class="slide first">
+                <img src="img/Yu-Gi-Oh-Master-Duel-1.jpg" alt="yugi">
+            </div>
+            <div class="slide">
+                <img src="img/Captura de tela 2025-08-13 091959.png" alt="magic">
+            </div>
+            <div class="slide">
+                <img src="img/Captura de tela 2025-08-13 092021.png" alt="poke">
+            </div>
+            <!-- fim -->
+
+            <!-- auto navegação -->
+            <div class="auto-navegacao">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+
+        </div>
+        <div class="manual-navegacao">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+
+    </section>
+
+    <h2>Noticias</h2>
+
+    <section class="noticias">
+        <div class="card">
+            <img src="img/90i58fqe3jye1.jpeg" alt="magic" class="img1card">
+            <p><a href="#">CMD Exóticos: TIfa, Lightning e Choco</a> </p>
+        </div>
+
+        <div class="card2">
+            <img src="img/tcg rocket.webp" alt="rocket" class="img2card">
+            <p> <a href="#">
+                    A Equipe Rocket Chegou
+                    ao Competitivo!
+                </a> </p>
+        </div>
+
+        <div class="card3">
+            <img src="img/mqdefault.jpg" alt="yugi" class="img3card">
+            <p><a href="#">Listas de Proibidos & Limitados</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li> <a href="pokemon.html">Pokemon</a></li>
+                <li><a href="yu-gi-oh.html"> Yu-Gi-Oh!</a></li>
+                <li><a href="magic.html">Magic</a></li>
+                <li><a href="rpg.html">RPG</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+
+         <!-- icone wpp para enviar mensagens -->
+        <img src="img/wpp.png" alt="botao-wpp" id="btn-wpp" onclick="showMenssager()">
+        <div id="wpp-msg">
+            <textarea name="msg" id="msg" color="30" rows="10"></textarea> <br>
+            <button onclick="enviarmsg()">Enviar</button>
+        </div>
+
+        <div class="assinatura">Copyrigth &copy; <span class="time">2025</span> - Desenvolvido por Stéfanny Freire</div>
+    </footer>
+
+
+
+
+
+
+    <!-- Carregamento JS -->
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

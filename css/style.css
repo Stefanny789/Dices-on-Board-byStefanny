@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+
+}
+
+a:hover {
+    color: #c0c0c0;
+    background-color: black;
+
+}
+
+header {
+    display: flex;
+    background-color: #c0c0c0;
+    width: 100%;
+    height: 120px;
+}
+
+.lupa {
+    width: 18px;
+    height: 18px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: self-start;
+    margin-left: 300px;
+}
+
+/* Input da pesquisa */
+.search-bar input {
+    width: 300px;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+/* Botão da pesquisa */
+.search-bar button {
+    width: 60px;
+    height: 34px;
+    padding: 7px 16px;
+    border: none;
+    background: #d9d9d9;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background: #f1f1f1;
+}
+
+.barra-header {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.nome-logo {
+    margin-left: 5px;
+    margin-bottom: auto;
+    margin-top: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    width: 60%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.slider {
+    margin: 0 auto;
+    width: 1001px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1001px;
+}
+
+.manual-navegacao {
+    position: absolute;
+    width: 1001px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #d9d9d9;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #c0c0c0;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+.auto-navegacao div {
+    border: 2px solid #c0c0c0;
+    border-radius: 100px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.auto-navegacao {
+    position: absolute;
+    width: 1001px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.auto-navegacao div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked~.auto-navegacao .auto-btn1 {
+    background-color: #c0c0c0;
+}
+
+#radio2:checked~.auto-navegacao .auto-btn2 {
+    background-color: #c0c0c0;
+}
+
+#radio3:checked~.auto-navegacao .auto-btn3 {
+    background-color: #c0c0c0;
+}
+
+h2 {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.noticias {
+    display: flex;
+}
+
+.img1card {
+    width: 348px;
+    height: 215px;
+}
+
+.card {
+    margin-left: 20%;
+    text-align: start;
+}
+
+.img2card {
+    width: 348px;
+    height: 215px;
+}
+
+.card2 {
+    margin-left: 40px;
+    text-align: start;
+}
+
+.img3card {
+    width: 348px;
+    height: 215px;
+}
+
+.card3 {
+    margin-left: 40px;
+    text-align: start;
+}
+
+footer {
+    padding: 20px;
+    background-color: #c0c0c0;
+    display: flex;
+}
+
+footer nav {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer li {
+    margin-right: 10px;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav li,
+footer nav a {
+    display: flex;
+}
+
+footer nav li a,
+footer nav li a:visited {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+footer nav li a:hover {
+    color: #c0c0c0;
+    background-color: #000;
+}
+
+.assinatura {
+    margin-top: 10%;
+    margin-left: -30%;
+    bottom: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#btn-wpp {
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#wpp-msg {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin: 50px 0px 50px;
+}
+
+.bcar {
+    border-radius: 10px;
+    background: #c0c0c0;
+}
+
+.bcar:hover {
+    color: #d9d9d9;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.mew {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.espeon {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.venosaur {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.yugi1 {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.yugi2 {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.yugi3 {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.magic1{
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+} 
+
+.magic2 {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+} 
+
+.magic3 {
+    width: 265px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.rpg1 {
+    width: 365px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.rpg2 {
+    width: 365px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.rpg3 {
+    width: 365px;
+    height: 368px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.bolsa {
+    width: 265px;
+    height: 268px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+} 
+
+.playmate {
+    width: 265px;
+    height: 268px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.shild {
+    width: 265px;
+    height: 268px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000;
+}
+
+main {
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+
